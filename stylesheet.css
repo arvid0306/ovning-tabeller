@@ -1,0 +1,46 @@
+table{                          /*sätter den grafiska designen för grunden till tabellen*/
+    border: 1px solid black;
+    color: black;
+    border-collapse: collapse;
+    width: 600px;
+    height: 150px;
+}
+
+td, th{                         /*grundreglerna för varje rubrikcell och datacell*/
+    border: 1px solid black;
+    height: 30px;
+    width: 25%;
+    font-family: Arial, sans-serif;
+}
+
+thead{                          /*bakgrundsfärg för tabellhuvudet*/
+    background-color:gainsboro;
+}
+
+tbody tr:nth-child(even){       /*ändrar färgen för de jämna raderna*/
+    background-color: red;
+    color: white;
+}
+
+tbody tr:nth-child(odd){        /*ändrar färg för de ojämna raderna*/
+    background-color:gold;
+    color: black;
+}
+
+td{                             /*centrerar samtlida dataceller (raderna nedanför kör över denna genom mer specifikation*/
+    text-align: center;
+}
+
+th:first-child, td:first-child{ /*första cellerna får vänstertext*/
+    text-align: left;
+}
+
+th:last-child, td:last-child{   /*sista cellerna får högertext*/
+    text-align: right;
+}
+
+caption{                        /*stylar tabellrubriken*/
+    caption-side: bottom;       /*lägger rubriken under tabellen*/
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
